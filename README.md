@@ -1,9 +1,8 @@
 # ROS2 Driver Support for Livox Avia
-This is a [Livox Avia](https://www.livoxtech.com/avia) driver under ROS2 Humble modified from the [official repository](https://github.com/Livox-SDK/livox_ros2_driver). Details about the parameter configuration can be found there.
+This is a [Livox Avia](https://www.livoxtech.com/avia) driver under ROS2 Humble modified from the [official Livox driver repository](https://github.com/Livox-SDK/livox_ros2_driver) and the [Livox-SDK repository modified for ubuntu 22.04](https://github.com/acceleration-robotics/Livox-SDK.git). Details about the parameter configuration can be found there.
 ## Dependencies
 * Ubuntu 22.04
 * ROS2 Humble
-* [Livox-SDK modified for ROS2 Humble](https://github.com/acceleration-robotics/Livox-SDK.git)
 ## Compilation
 ```
 cd ~/ros2_ws/src

@@ -16,7 +16,7 @@ If you would like to compile livox_ros2_driver, be sure to delete/rename the "li
 
 ## Usage
 To use this driver, please follow the steps below.
-1. Change the 'broadcast_code' in livox_ros2_driver/config/livox_lidar_config.json to the composition of a 14-character serial number (can be found under the QR code of the Avia body shell) and an additional character '1', e.g., '3JEDLB100127651'.
+1. Change the 'broadcast_code' in livox_ros2_avia/config/livox_lidar_config.json to the composition of a 14-character serial number (can be found under the QR code of the Avia body shell) and an additional character '1', e.g., '3JEDLB100127651'.
 2. Change the 'enable_connect' in the same file from 'false' to 'true'.
 3. Open a new terminal and launch the driver by using the following three methods:
 * Publish Livox customized point cloud data

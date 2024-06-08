@@ -12,7 +12,7 @@ colcon build --symlink-install
 ```
 IMPORTANT :
 
-If you would like to compile livox_ros2_driver, be sure to delete/rename the "livox_sdk_static.a" file in the "/usr/local/lib/" directory. The livox_ros2_driver would build a shared library of Livox-SDK on its own.
+If you would like to compile livox_ros2_avia, be sure to delete/rename the "livox_sdk_static.a" file in the "/usr/local/lib/" directory. The livox_ros2_avia would build a shared library of Livox-SDK on its own.
 
 ## Usage
 To use this driver, please follow the steps below.

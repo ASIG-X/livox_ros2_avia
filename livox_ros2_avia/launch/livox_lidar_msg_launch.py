@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 import launch
 
 ################### user configure parameters for ros2 start ###################
-xfer_format   = 0    # 0-Pointcloud2(PointXYZRTL), 1-customized pointcloud format
+xfer_format   = 1    # 0-Pointcloud2(PointXYZRTL), 1-customized pointcloud format
 multi_topic   = 0    # 0-All LiDARs share the same topic, 1-One LiDAR one topic
 data_src      = 0    # 0-lidar,1-hub
 publish_freq  = 10.0 # freqency of publish,1.0,2.0,5.0,10.0,etc
@@ -34,8 +34,8 @@ livox_ros2_params = [
 
 def generate_launch_description():
     livox_driver = Node(
-        package='livox_ros2_driver',
-        executable='livox_ros2_driver_node',
+        package='livox_ros2_avia',
+        executable='livox_ros2_avia_node',
         name='livox_lidar_publisher',
         output='screen',
         parameters=livox_ros2_params

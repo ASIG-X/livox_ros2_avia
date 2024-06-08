@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>livox_ros2_driver</name>
+  <name>livox_ros2_avia</name>
   <version>0.0.1</version>
-  <description>livox ros2 driver</description>
-  <maintainer email="dev@livoxtech.com">feng</maintainer>
-  <license>TODO: License declaration</license>
+  <description>livox ros2 driver for Avia</description>
+  <maintainer email="ziyu.cao@liu.se">Ziyu Cao</maintainer>
+  <license>GPLv3</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 

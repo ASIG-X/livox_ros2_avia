@@ -34,13 +34,29 @@ livox_ros2_params = [
 
 def generate_launch_description():
     livox_driver = Node(
-        package='livox_ros2_driver',
-        executable='livox_ros2_driver_node',
+        package='livox_ros2_avia',
+        executable='livox_ros2_avia_node',
         name='livox_lidar_publisher',
         output='screen',
         parameters=livox_ros2_params
         )
 
+    livox_rviz = Node(
+            package='rviz2',
+            executable='rviz2',
+            output='screen',
+            arguments=['--display-config', rviz_config_path]
+        )
+
     return LaunchDescription([
-        livox_driver
+        livox_driver,
+        livox_rviz,
+        # launch.actions.RegisterEventHandler(
+        #     event_handler=launch.event_handlers.OnProcessExit(
+        #         target_action=livox_rviz,
+        #         on_exit=[
+        #             launch.actions.EmitEvent(event=launch.events.Shutdown()),
+        #         ]
+        #     )
+        # )
     ])

@@ -1,7 +1,7 @@
 # Copyright(c) 2020 livoxtech limited.
 
 cmake_minimum_required(VERSION 3.5)
-project(livox_ros2_driver)
+project(livox_ros2_avia)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -48,14 +48,14 @@ add_definitions(${PCL_DEFINITIONS})
 
 # livox ros2 driver target
 ament_auto_add_library(${PROJECT_NAME} SHARED
-  livox_ros2_driver/lvx_file.cpp
-  livox_ros2_driver/ldq.cpp
-  livox_ros2_driver/lds.cpp
-  livox_ros2_driver/lds_lvx.cpp
-  livox_ros2_driver/lds_lidar.cpp
-  livox_ros2_driver/lds_hub.cpp
-  livox_ros2_driver/lddc.cpp
-  livox_ros2_driver/livox_ros2_driver.cpp
+  livox_ros2_avia/lvx_file.cpp
+  livox_ros2_avia/ldq.cpp
+  livox_ros2_avia/lds.cpp
+  livox_ros2_avia/lds_lvx.cpp
+  livox_ros2_avia/lds_lidar.cpp
+  livox_ros2_avia/lds_hub.cpp
+  livox_ros2_avia/lddc.cpp
+  livox_ros2_avia/livox_ros2_driver.cpp
   timesync/timesync.cpp
   timesync/user_uart/user_uart.cpp
   common/comm/comm_protocol.cpp
@@ -79,7 +79,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
   common/comm
   timesync
   timesync/user_uart
-  livox_ros2_driver
+  livox_ros2_avia
 )
 
 # link libraries

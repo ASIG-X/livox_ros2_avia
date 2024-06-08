@@ -21,13 +21,13 @@ To use this driver, please follow the steps below.
 3. Open a new terminal and launch the driver by using the following three methods:
 * Publish Livox customized point cloud data
 ```
-ros2 launch livox_ros2_driver livox_lidar_msg_launch.py
+ros2 launch livox_ros2_avia livox_lidar_msg_launch.py
 ```
 * Publish pointcloud2 format data
 ```
-ros2 launch livox_ros2_driver livox_lidar_launch.py
+ros2 launch livox_ros2_avia livox_lidar_launch.py
 ```
 * Publish pointcloud2 format data and visualize the point cloud in RViz
 ```
-ros2 launch livox_ros2_driver livox_lidar_rviz_launch.py
+ros2 launch livox_ros2_avia livox_lidar_rviz_launch.py
 ```

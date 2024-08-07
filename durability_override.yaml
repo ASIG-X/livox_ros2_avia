@@ -1,0 +1,10 @@
+# durability_override.yaml
+/livox/imu:
+  durability: volatile
+  history: keep_all
+  reliability: reliable
+
+/livox/lidar:
+  durability: volatile
+  history: keep_all
+  reliability: reliable

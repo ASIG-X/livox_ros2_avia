@@ -31,3 +31,11 @@ ros2 launch livox_ros2_avia livox_lidar_launch.py
 ```
 ros2 launch livox_ros2_avia livox_lidar_rviz_launch.py
 ```
+## Contributors
+Ziyu Cao (email: ziyu.cao@liu.se)
+
+Kailai Li (email: kailai.li@rug.nl)
+## License
+The source code is released under MIT license.
+
+We are constantly working on improving our code. For any technical issues, please contact Ziyu Cao (ziyu.cao@liu.se).

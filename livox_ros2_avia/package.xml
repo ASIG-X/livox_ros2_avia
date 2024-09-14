@@ -5,7 +5,7 @@
   <version>0.0.1</version>
   <description>livox ros2 driver for Avia</description>
   <maintainer email="ziyu.cao@liu.se">Ziyu Cao</maintainer>
-  <license>GPLv3</license>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
